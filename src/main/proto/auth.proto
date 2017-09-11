@@ -1,0 +1,22 @@
+syntax = "proto3";
+package com.whyun;
+
+message Login {//login message
+    string username = 1;
+    string uid = 2;
+    string avatar = 3;
+    uint64 timestamp = 4;
+    string password = 5;
+}
+
+message Result {
+    uint32 code = 1;
+    string msg = 2;
+    string username = 3;
+    uint64 timestamp = 4;
+}
+
+service Auth {
+    //
+    rpc DoCheck (Login) returns (Result) {}
+}
