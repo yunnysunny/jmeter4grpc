@@ -1,0 +1,170 @@
+repo_name: yunnysunny/jmeter4grpc
+report_id: 01ff5d4fcc7aa5ea784d0e6d85de7e2c
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-05T15:57:48+00:00'
+requested_by: yunnysunny
+provider: github
+branch: master
+detected_tools_count: 9
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc
+  detection_source: Repo Metadata
+- name: Protobuf
+  description: Google's data interchange format
+  website_url: https://developers.google.com/protocol-buffers/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Serialization Frameworks
+  image_url: https://img.stackshare.io/service/4393/ma2jqJKH_400x400.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc
+  detection_source: Repo Metadata
+- name: com.google.protobuf:protobuf-java
+  description: Core Protocol Buffers library
+  version: 3.3.0
+  license: BSD-1-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+  vulnerabilities:
+  - name: NULL Pointer Dereference in Protocol Buffers
+    cve_id: CVE-2021-22570
+    cve_url: https://github.com/advisories/GHSA-77rm-9x9h-xj3g
+    detected_date: Aug 8
+    severity: high
+    first_patched: 3.15.0
+  - name: Protobuf Java vulnerable to Uncontrolled Resource Consumption
+    cve_id: CVE-2022-3510
+    cve_url: https://github.com/advisories/GHSA-4gg5-vx3j-xwc7
+    detected_date: Dec 20
+    severity: high
+    first_patched: 3.16.3
+  - name: Protobuf Java vulnerable to Uncontrolled Resource Consumption
+    cve_id: CVE-2022-3509
+    cve_url: https://github.com/advisories/GHSA-g5ww-5jh7-63cx
+    detected_date: Dec 13
+    severity: high
+    first_patched: 3.16.3
+  - name: A potential Denial of Service issue in protobuf-java
+    cve_id: CVE-2021-22569
+    cve_url: https://github.com/advisories/GHSA-wrvw-hg22-4m67
+    detected_date: Jan 8
+    severity: high
+    first_patched: 3.16.1
+  - name: protobuf-java has a potential Denial of Service issue
+    cve_id: CVE-2022-3171
+    cve_url: https://github.com/advisories/GHSA-h4h5-3hr4-j3g2
+    detected_date: Oct 5
+    severity: moderate
+    first_patched: 3.16.3
+- name: io.grpc:grpc-netty
+  description: 'GRPC: Netty'
+  version: 1.4.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+- name: io.grpc:grpc-protobuf
+  description: 'GRPC: Protobuf'
+  version: 1.4.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+  vulnerabilities:
+  - name: gRPC Reachable Assertion issue
+    cve_id: CVE-2023-1428
+    cve_url: https://github.com/advisories/GHSA-6628-q6j9-w8vg
+    detected_date: Jul 7
+    severity: high
+    first_patched: 1.53.0
+  - name: Connection confusion in gRPC
+    cve_id: CVE-2023-32731
+    cve_url: https://github.com/advisories/GHSA-cfgp-2977-2fmm
+    detected_date: Jul 6
+    severity: high
+    first_patched: 1.53.0
+  - name: gRPC connection termination issue
+    cve_id: CVE-2023-32732
+    cve_url: https://github.com/advisories/GHSA-9hxf-ppjv-w6rq
+    detected_date: Jul 7
+    severity: moderate
+    first_patched: 1.53.0
+- name: io.grpc:grpc-stub
+  description: 'GRPC: Stub'
+  version: 1.4.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+- name: org.apache.jmeter:ApacheJMeter_core
+  version: '3.2'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
+- name: org.apache.jmeter:ApacheJMeter_java
+  description: Apache JMeter
+  version: '3.2'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/yunnysunny/jmeter4grpc/blob/master/pom.xml
+  detection_source: pom.xml
+  last_updated_by: yunnysunny
+  last_updated_on: 2017-09-11 11:20:06.000000000 Z
